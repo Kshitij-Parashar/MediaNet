@@ -8,15 +8,15 @@
             <div class="formContainer" >
                 <form name="addBookForm" class="addBookForm" ng-submit="submit()">
                     <div class="field">
-                        <input name="bookName" type="text" ng-model="bookName" required>
+                        <input name="bookName" type="text" ng-model="bookName" placeholder="Book Name" required>
                         <span ng-if="!addBookForm.bookName.$valid"></span>
                     </div>
                     <div class="field">
-                        <input name="authorName" type="text" ng-model="authorName" required>
+                        <input name="authorName" type="text" ng-model="authorName" placeholder="Author Name" required>
                         <span ng-if="!addBookForm.authorName.$valid"></span>
                     </div>
                     <div class="field">
-                        <input name="bookPrice" type="number" ng-model="bookPrice" required>
+                        <input name="bookPrice" type="number" ng-model="bookPrice" placeholder="Book Price" required>
                         <span ng-if="!addBookForm.bookPrice.$valid"></span>
                     </div>
                     <p>
