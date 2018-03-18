@@ -43,6 +43,11 @@ MediaNetApp.controller('showBooksController',function ($http, $scope,$rootScope)
         $rootScope.emitCount();
     };
     $scope.addToFav = function(index){
+        for(var i = 0; i < $scope.favList.length; i++) {
+            if ($scope.favList[i].bookName == $scope.bookList[index].bookName && $scope.favList[i].authorName == $scope.bookList[index].authorName && $scope.favList[i].bookPrice == $scope.bookList[index].bookPrice) {
+                return;
+            }
+        }
         $scope.favList.push($scope.bookList[index]);
         localStorage.setItem('favList',JSON.stringify($scope.favList));
         //$scope.bookList.splice(index,1);
