@@ -43,6 +43,7 @@
     height: 100%;
     border: 1px solid #EDEDED;
     border-radius: 2px;
+    padding-left: 10px;
 }
 
 textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
