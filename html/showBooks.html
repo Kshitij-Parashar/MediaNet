@@ -1,0 +1,32 @@
+<div ng-controller="showBooksController" class="mainDiv">
+    <side-bar></side-bar>
+    <div class="main-body">
+     <div class="content">
+         <div class="addBooksHeading showBooksHeading">
+             <h3>Books</h3>
+         </div>
+         <div class="search-div">
+             <div class="search inner-addon left-addon">
+                 <i class="glyphicon glyphicon-search"></i>
+                 <input type="text" class="form-control" />
+             </div>
+         </div>
+         <div class="grid-item-container">
+             <div class="grid-item" ng-repeat="book in bookList">
+                 <div class="grid-content">
+                          <div class="authorName">
+                              <span class="authorNameHolder">{{book.authorName}}</span>
+                              <span class="crossHolder" ng-click="deleteBook($index)"><i class="fa fa-close"></i></span>
+                          </div>
+                          <div class="bookName">
+                              <div class="bookNameHolder">{{book.bookName}}</div>
+                              <div class="priceHolder">$ <span class="price">{{book.bookPrice}}</span></div>
+                          </div>
+                          <div class="addFav" ng-click="addToFav($index)">Add to Favourites</div>
+                 </div>
+             </div>
+         </div>
+         </div>
+
+ </div>
+</div>

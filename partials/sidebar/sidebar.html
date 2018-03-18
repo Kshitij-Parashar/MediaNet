@@ -1,0 +1,17 @@
+<div class="sidebar" ng-controller="sideBarController">
+    <div class="head">
+        <span class="bookStoreHeading">Book Store</span>
+    </div>
+    <div class="icon-wrapper" ui-sref="addBooks">
+        <span class="bookStoreNav">Add Books</span>
+        <span class="addIcon"><i class="fa fa-plus"></i></span>
+    </div>
+    <div class="icon-wrapper" ui-sref="showBooks">
+        <span class="bookStoreNav">Books</span>
+        <span class="count">{{bookList.length}}</span>
+    </div>
+    <div class="icon-wrapper" ui-sref="favoriteBooks">
+        <span class="bookStoreNav">Favourites</span>
+        <span class="count">{{favList.length}}</span>
+    </div>
+</div>
