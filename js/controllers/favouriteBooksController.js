@@ -29,8 +29,8 @@ MediaNetApp.controller('favoriteBooksController',function ($http, $scope,$rootSc
         $scope.oldFavList =  $scope.favList;
     }
     $scope.removeBook = function(index){
-        $scope.bookList.push($scope.favList[index]);
-        localStorage.setItem('bookList',JSON.stringify($scope.bookList));
+        // $scope.bookList.push($scope.favList[index]);
+        // localStorage.setItem('bookList',JSON.stringify($scope.bookList));
         $scope.favList.splice(index,1);
         localStorage.setItem('favList',JSON.stringify($scope.favList));
         $scope.oldFavList = $scope.favList;
